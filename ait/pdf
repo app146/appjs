@@ -1,0 +1,643 @@
+1.Write HTML code to design a web as per given specification. Divide the browser screen
+into two frames. The first frame will display the heading. Divide the second frame into
+two columns. The frame on the left should be name of cities consisting of hyperlinks.
+Clicking on any one of these hyperlinks will display related information in right hand side
+frame as shown below
+IT companies in India
+City
+Pune
+Mumbai
+Banglore
+Pune
+Infosys
+Persistent
+<!DOCTYPE html>
+<html>
+<head>
+<title>IT Companies in India</title>
+<style>
+/* CSS for the layout */
+body {
+font-family: Arial, sans-serif;
+}
+.container {
+display: flex;
+flex-direction: row;
+width: 800px;
+margin-top: 20px;
+}
+.sidebar {
+flex: 1;
+background-color: #f1f1f1;
+padding: 10px;
+}
+.content {
+flex: 2;
+padding: 10px;
+}
+/* CSS for the hyperlinks */
+.sidebar a {
+display: block;
+margin-bottom: 5px;
+color: #000;
+text-decoration: none;
+}
+.sidebar a:hover {
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<h1>IT Companies in India</h1>
+<div class="container">
+<div class="sidebar">
+<h2>City</h2>
+<a href="#pune">Pune</a>
+<a href="#mumbai">Mumbai</a>
+<a href="#bangalore">Bangalore</a>
+</div>
+<div class="content">
+<h2 id="pune">Pune</h2>
+<p>Infosys</p>
+<p>Persistent</p>
+<h2 id="mumbai">Mumbai</h2>
+<!-- Add Mumbai city's information here -->
+<h2 id="bangalore">Bangalore</h2>
+<!-- Add Bangalore city's information here -->
+</div>
+</div>
+</body>
+</html>
+2.Write HTML code to design a website for Online Shopping. Design home page which
+consist of list of items each with hyperlink, clicking on which should display related
+information on separate web page. (Use external CSS to format each web page)
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Shopping</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Welcome to Online Shopping</h1>
+<ul class="item-list">
+<li><a href="product1.html">Product 1</a></li>
+<li><a href="product2.html">Product 2</a></li>
+<li><a href="product3.html">Product 3</a></li>
+<li><a href="product4.html">Product 4</a></li>
+</ul>
+</body>
+</html>
+product1.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product 1 - Online Shopping</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Product 1</h1>
+<div class="product-info">
+<p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Price: $99.99</p>
+<p>Availability: In Stock</p>
+</div>
+</body>
+</html>
+css
+body {
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+padding: 20px;
+}
+h1 {
+color: #333;
+}
+.item-list {
+list-style-type: none;
+padding: 0;
+}
+.item-list li {
+margin-bottom: 10px;
+}
+.item-list a {
+text-decoration: none;
+color: #007bff;
+}
+.product-info {
+background-color: #fff;
+padding: 10px;
+}
+3.Design Aadhar card registration form and apply all the necessary validations on it.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aadhar Card Registration</title>
+<style>
+.container {
+max-width: 400px;
+margin: 0 auto;
+}
+.form-group {
+margin-bottom: 20px;
+}
+.form-group label {
+display: block;
+font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="email"] {
+width: 100%;
+padding: 5px;
+}
+.form-group input[type="submit"] {
+background-color: #007bff;
+color: #fff;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+.error-message {
+color: red;
+font-size: 14px;
+}
+.error-input {
+border: 1px solid red;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Aadhar Card Registration</h1>
+<form>
+<div class="form-group">
+<label for="name">Full Name:</label>
+<input type="text" id="name" required>
+<span class="error-message" id="name-error"></span>
+</div>
+<div class="form-group">
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+<span class="error-message" id="email-error"></span>
+</div>
+<div class="form-group">
+<label for="address">Address:</label>
+<input type="text" id="address" required>
+<span class="error-message" id="address-error"></span>
+</div>
+<div class="form-group">
+<input type="submit" value="Submit">
+</div>
+</form>
+</div>
+</body>
+</html>
+4. Write a program to display star shape on webpage using svg tag
+<!DOCTYPE html>
+<html>
+<head>
+<title>Star Shape</title>
+<style>
+svg {
+width: 200px;
+height: 200px;
+background-color: #f9f9f9;
+}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+<polygon points="10,1 14,19 4,7 16,7 6,19" fill="#007bff"/>
+</svg>
+</body>
+</html>
+5.Write a program to display Audio and Video file on webpage
+<!DOCTYPE html>
+<html>
+<head>
+<title>Audio and Video Example</title>
+</head>
+<body>
+<h2>Audio Example</h2>
+<audio controls>
+<source src="audio-file.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<h2>Video Example</h2>
+<video width="400" controls>
+<source src="video-file.mp4" type="video/mp4">
+Your browser does not support the video element.
+</video>
+</body>
+</html>
+
+
+php
+
+
+
+1.Write Program to demonstrate the use of variables using mathematical calculator.
+Html code
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+</head>
+<body>
+<h1>Simple Calculator</h1>
+<form method="post" action="calculator.php">
+<input type="number" name="num1" placeholder="Enter number 1" required><br>
+<input type="number" name="num2" placeholder="Enter number 2" required><br>
+<select name="operator">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select><br>
+<input type="submit" name="calculate" value="Calculate">
+</form>
+</body>
+</html>
+Php code
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator - Result</title>
+</head>
+<body>
+<h1>Simple Calculator - Result</h1>
+<?php
+if (isset($_POST['calculate'])) {
+$num1 = $_POST['num1'];
+$num2 = $_POST['num2'];
+$operator = $_POST['operator'];
+$result = 0;
+switch ($operator) {
+case '+':
+$result = $num1 + $num2;
+break;
+case '-':
+$result = $num1 - $num2;
+break;
+case '*':
+$result = $num1 * $num2;
+break;
+case '/':
+if ($num2 != 0) {
+$result = $num1 / $num2;
+} else {
+echo "Error: Division by zero is not allowed.";
+exit;
+}
+break;
+default:
+echo "Error: Invalid operator.";
+exit;
+}
+echo "Result: $num1 $operator $num2 = $result";
+}
+?>
+</body>
+</html>
+2.Create Registration page and display all form content entered by end user on a separate
+webpage using PHP. (use most of the different HTML form controls and different types of
+variable in PHP).
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+</head>
+<body>
+<h1>Registration Page</h1>
+<form method="post" action="process.php">
+<label for="name">Name:</label>
+<input type="text" name="name" required><br>
+<label for="email">Email:</label>
+<input type="email" name="email" required><br>
+<label for="age">Age:</label>
+<input type="number" name="age" required><br>
+<label for="gender">Gender:</label>
+<select name="gender" required>
+<option value="">Select</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select><br>
+<label for="interests">Interests:</label><br>
+<input type="checkbox" name="interests[]" value="Sports"> Sports<br>
+<input type="checkbox" name="interests[]" value="Music"> Music<br>
+<input type="checkbox" name="interests[]" value="Travel"> Travel<br>
+<label for="country">Country:</label>
+<input type="text" name="country"><br>
+<label for="message">Message:</label><br>
+<textarea name="message" rows="5" cols="30"></textarea><br>
+<input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Details</title>
+</head>
+<body>
+<h1>Registration Details</h1>
+<?php
+if (isset($_POST['submit'])) {
+$name = $_POST['name'];
+$email = $_POST['email'];
+$age = $_POST['age'];
+$gender = $_POST['gender'];
+$interests = $_POST['interests'];
+$country = $_POST['country'];
+$message = $_POST['message'];
+echo "<p><strong>Name:</strong> " . $name . "</p>";
+echo "<p><strong>Email:</strong> " . $email . "</p>";
+echo "<p><strong>Age:</strong> " . $age . "</p>";
+echo "<p><strong>Gender:</strong> " . $gender . "</p>";
+echo "<p><strong>Interests:</strong></p>";
+if (!empty($interests)) {
+echo "<ul>";
+foreach ($interests as $interest) {
+echo "<li>" . $interest . "</li>";
+}
+echo "</ul>";
+} else {
+echo "<p>No interests selected</p>";
+}
+echo "<p><strong>Country:</strong> " . $country . "</p>";
+echo "<p><strong>Message:</strong> " . $message . "</p>";
+} else {
+echo "<p>No form submitted</p>";
+}
+?>
+</body>
+</html>
+3.Create a PHP page for Registration page with MySQL connection.
+(5 Marks)
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Page</title>
+</head>
+<body>
+<h1>Registration Page</h1>
+<form method="post" action="register_process.php">
+<label for="username">Username:</label>
+<input type="text" name="username" required><br>
+<label for="password">Password:</label>
+<input type="password" name="password" required><br>
+<label for="email">Email:</label>
+<input type="email" name="email" required><br>
+<input type="submit" name="submit" value="Register">
+</form>
+</body>
+</html>
+<?php
+// Establish MySQL database connection
+$host = "localhost";
+$username = "root";
+$password = "imcc146";
+$database = "registerdb";
+$conn = mysqli_connect($host, $username, $password, $database);
+// Check if the connection was successful
+if (!$conn) {
+die("Connection failed: " . mysqli_connect_error());
+}
+// Process registration form submission
+if (isset($_POST['submit'])) {
+$username = $_POST['username'];
+$password = $_POST['password'];
+$email = $_POST['email'];
+// Insert user data into the database
+$sql = "INSERT INTO users (username, password, email) VALUES ('$username',
+'$password', '$email')";
+if (mysqli_query($conn, $sql)) {
+echo "Registration successful";
+} else {
+echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+}
+// Close the database connection
+mysqli_close($conn);
+?>
+4.Create a PHP page for login page with MySQL connection.
+(5 Marks)
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<h1>Login Page</h1>
+<form method="post" action="login_process.php">
+<label for="username">Username:</label>
+<input type="text" name="username" required><br>
+<label for="password">Password:</label>
+<input type="password" name="password" required><br>
+<input type="submit" name="submit" value="Login">
+</form>
+</body>
+</html>
+<?php
+// Establish MySQL database connection
+$host = "localhost";
+$username = "root";
+$password = "imcc146";
+$database = "logindb";
+$conn = mysqli_connect($host, $username, $password, $database);
+// Check if the connection was successful
+if (!$conn) {
+die("Connection failed: " . mysqli_connect_error());
+}
+// Process login form submission
+if (isset($_POST['submit'])) {
+$username = $_POST['username'];
+$password = $_POST['password'];
+// Retrieve user data from the database
+$sql = "SELECT * FROM users WHERE username='$username' AND
+password='$password'";
+$result = mysqli_query($conn, $sql);
+if (mysqli_num_rows($result) > 0) {
+echo "Login successful";
+} else {
+echo "Invalid username or password";
+}
+}
+// Close the database connection
+mysqli_close($conn);
+?>
+5.Write a PHP program to Read from existing file and write to another file.
+(5 Marks)
+<?php
+// File paths
+$sourceFilePath = "D:/fymca/ait/fh1.txt";
+$destinationFilePath = "D:/fymca/ait/fh2.txt";
+// Read from the source file
+$sourceContent = file_get_contents($sourceFilePath);
+// Write to the destination file
+$destinationFile = fopen($destinationFilePath, "w");
+if ($destinationFile) {
+fwrite($destinationFile, $sourceContent);
+fclose($destinationFile);
+echo "File copied successfully!";
+} else {
+echo "Error opening destination file.";
+}
+?>
+
+
+/*
+1.Write an AngularJS script to print details of bank (bank name, MICR code, IFC code, address etc.) in tabular form 
+using ng-repeat. */
+< !DOCTYPE html > 
+<html> 
+<script src= "C:\angular-16.0.0\angular.js"> 
+</script> 
+<style> 
+    body { 
+    margin: 2%; 
+    font-size: 100%; 
+    } 
+    th, 
+    td { 
+    padding: 21px; 
+ } 
+</style> 
+<body ng-app="myApp" ng-controller="ListController"> 
+ <h1>Bank Details</h1> 
+ <table border=1> 
+    <thead> 
+        <tr> 
+        <th>S.No</th> 
+        <th>Name</th> 
+        <th>MICR Code</th> 
+        <th>IFSC Code</th> 
+        <th>Address</th> 
+    </tr>
+    </thead> 
+    <tr ng-repeat="i in bank"> 
+        <td> {{i.sno}} </td> 
+        <td> {{i.name}} </td> 
+        <td> {{i.micr}} </td> 
+        <td> {{i.ifsc}} </td> 
+        <td> {{i.address}} </td> 
+    </tr> 
+ </table> 
+</body> 
+<script> 
+    var app = angular.module('myApp', []); 
+    app.controller( 
+    'ListController', function($scope) { 
+    $scope.bank = [{ 
+        sno: 1, 
+        name: 'HDFC', 
+        micr: 'hdfc654', 
+        ifsc: 7954264861, 
+        address: "nagar", 
+        }, { 
+        sno: 2, 
+        name: 'ICICI', 
+        micr: 'icici798', 
+        ifsc: 7561289535, 
+        address: "pune", 
+        }, { 
+        sno: 3, 
+        name: 'RBI', 
+        micr: 'rbi123', 
+        ifsc: 7956452316, 
+        address: "kolhapur", 
+        }, { 
+        sno: 4, 
+        name: 'BOM', 
+        micr: 'bom183', 
+        ifsc: 71182746851, 
+        address: "mumbai", 
+        }, { 
+        sno: 5, 
+        name: 'BOB', 
+        micr: 'bob127', 
+        ifsc: 7765774421, 
+        address: "nagpur", 
+        } 
+    ]; 
+    }); 
+</script> 
+</html >
+
+
+
+/*
+2.Write an AngularJS script for addition of two numbers using ng-init, ng-model & ng-bind. And also Demonstrate 
+ng-show, ng-disabled, ng-click directives on button component. */
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="C:\angular-16.1.0\angular.js"></script>
+</head>
+<body ng-app ng-init="checked=true;check=true" >
+ Enter number1: <input type="number" ng-model="n1"><br/>
+ <br/>
+ Enter number2:<input type="number" ng-model="n2">
+ <br/><br/>
+ <button ng-click="add=(n1+n2)" ng-init="add=0">result </button><br/><br/>
+ addition of two numbers= 
+ <span ng-bind="add"></span><br/><br/>
+ <label>Click me to make button disabled or enabled: <input type="checkbox" ng-model="checked"></label>
+ <button ng-disabled="checked" >Disable</button><br/><br/>
+ <label>Click me to show or hide button: <input type="checkbox" ng-model="check"></label> 
+ <button ng-show="check">Show</button><br/>
+</body>
+</html>
+
+
+
+/*
+3.Create a Node.js file that Insert Multiple Records in "student" table, 
+   and display the result object on console. */
+ //insert_record.js
+var mysql = require('mysql');
+var con = mysql.createConnection({
+ host: "localhost",
+ user: "root",
+ password: "imcc@123",
+ database: "studentdb"
+});
+con.connect(function(err) {
+ if (err) throw err;
+ console.log("Connected Successfully!");
+ var sql = "INSERT INTO student (rollno,name, percentage) VALUES ?"; 
+var values = [ 
+[1,'jay', 75.9], 
+[2,'riya', 86.5], 
+[3,'shiv', 93.4] 
+]; 
+con.query(sql, [values], function (err, result) 
+{
+ if (err) throw err;
+ console.log("Number of records inserted: " + result.affectedRows); 
+ });
+con.query("SELECT * FROM student", function (err, result, fields) {
+ if (err) throw err;
+ console.log(result);
+ });
+});
+
+
+
+/*
+4.Create a Node.js application that uses user defined module to find area of rectangle and display details on 
+console. */
+var rect={ 
+    area: function(l,b)
+   {
+    var a; 
+    a=l*b;
+    console.log('area of rectangle is:'+a);
+   }
+   };
+   module.exports=rectangle
+
+
+/*myrect.js file
+var mymod=require('C:\Users\HP\Desktop\ait\rectangle.js');
+mymod.area(5,6);*/ 
